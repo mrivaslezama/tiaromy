@@ -8,265 +8,255 @@ const { title } = Astro.props;
 
 <!DOCTYPE HTML>
 
-	<head>
+
+<head>
 		
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
 
-		<title>TiaRomy - Bienvenidos</title>
-	</head>
-	<body>
-		<div id="page-wrapper">
+	<title>TiaRomy - Bienvenidos</title>
+</head>
+<body>
+	<div id="page-wrapper">
 
-			<!-- Header -->
-				<section id="header">
+		<!-- Header -->
+			<section id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Logo -->
+								<h1><a href="index.html" id="logo">La Tia Romy</a></h1>
+
+							<!-- Nav -->
+								<nav id="nav">
+									<a href="#bienvenidos">Bienvenidos</a>
+									<a href="twocolumn1.html">Menu</a>
+									<a href="twocolumn2.html">Especiales</a>
+									<a href="#direccion">Cómo llegar</a>
+								</nav>
+
+						</div>
+					</div>
+				</div>
+				<div id="bienvenidos">
 					<div class="container">
 						<div class="row">
-							<div class="col-12">
+							<div class="col-6 col-12-medium">
 
-								<!-- Logo -->
-									<h1><a href="index.html" id="logo">La Tia Romy</a></h1>
+								<!-- Banner Copy -->
+									<p>La Tia Romy restaurante, es una iniciativa familiar que busca ofrecer diversidad gastronómica fusionando lo  mejor de la cocina tradicional e internacional. Logrando un gran balance y
+									"excelentes niveles de receptividad por parte de nuestra clientela.” ofrecemos platos deliciosos, "¡hechos como en casa!".
+										 ...</p>
+									<a href="#direccion" class="button-large">Como llegar</a>
 
-								<!-- Nav -->
-									<nav id="nav">
-										
-										<a href="#bienvenidos">Bienvenidos</a>
-										<a href="twocolumn1.html">Menu</a>
-										<a href="twocolumn2.html">Especiales</a>
-										<a href="#direccion">Cómo llegar</a>
-									</nav>
+							</div>
+							<div class="col-6 col-12-medium imp-medium">
+
+								<!-- Banner Image -->
+									<a href="#" class="bordered-feature-image"><img src="http://www.unileverfoodsolutions.com.mx/dam/global-ufs/mcos/NOLA/calcmenu/recipes/MX-recipes/In-Development/FULL-POLLO-ASADO.png" alt="" /></a>
 
 							</div>
 						</div>
 					</div>
-					<div id="bienvenidos">
-						<div class="container">
-							<div class="row">
-								<div class="col-6 col-12-medium">
+				</div>
+			</section>
 
-									<!-- Banner Copy -->
-										<p>La Tia Romy restaurante, es una iniciativa familiar que busca ofrecer diversidad gastronómica fusionando lo  mejor de la cocina tradicional e internacional. Logrando un gran balance y
-										"excelentes niveles de receptividad por parte de nuestra clientela.” ofrecemos platos deliciosos, "¡hechos como en casa!".
-											 ...</p>
-										<a href="#direccion" class="button-large">Como llegar</a>
+		<!-- Features -->
+			<section id="features">
+				<div class="container">
+					<div class="row">
+						<div class="col-3 col-6-medium col-12-small">
 
-								</div>
-								<div class="col-6 col-12-medium imp-medium">
+							<!-- Feature #1 -->
+								<section>
+									<a href="#" class="bordered-feature-image"><img src="https://i.ytimg.com/vi/R1BRbyOqycQ/maxresdefault.jpg" alt="" /></a>
+									<h2>Churrasco de pollo</h2>
+									<p>
+										La <strong>Tia Romy</strong>, es un restaurante
+										con lo mejor de la comida tradicional e internacional, fusionando lo mejor de la cocina, en platos unicos, realizados con ingredientes producidos en la región.
+									</p>
+								</section>
 
-									<!-- Banner Image -->
-										<a href="#" class="bordered-feature-image"><img src="http://www.unileverfoodsolutions.com.mx/dam/global-ufs/mcos/NOLA/calcmenu/recipes/MX-recipes/In-Development/FULL-POLLO-ASADO.png" alt="" /></a>
+						</div>
+						<div class="col-3 col-6-medium col-12-small">
 
-								</div>
-							</div>
+							<!-- Feature #2 -->
+								<section>
+									<a href="#" class="bordered-feature-image"><img src="../public/bebidas.jpg" alt="" /></a>
+									<h2>Mezclando tradición e innovación</h2>
+									<p>
+										Traemos para nuestros clientes, combos de pollo asado a las brasas, con papas fritas (para 2 personas) y bebida de 1.5 litros. (Llamanos para reservar)
+									</p>
+								</section>
+
+						</div>
+						<div class="col-3 col-6-medium col-12-small">
+
+							<!-- Feature #3 -->
+								<section>
+									<a href="#" class="bordered-feature-image"><img src="../public/ensaladaEspecial.jpg" alt="" /></a>
+									<h2>Ensaladas especiales</h2>
+									<p>
+										Contamos con variedad de ensaladas, realizadas con productos naturales producidos en la localidad, y comprados a productores directos. Realizamos las ensaladas al gusto y requerimiento de nuestros clientes.
+									</p>
+								</section>
+
+						</div>
+						<div class="col-3 col-6-medium col-12-small">
+
+							<!-- Feature #4 -->
+								<section>
+									<a href="#" class="bordered-feature-image"><img src="../public/carbonara.jpg" alt="" /></a>
+									<h2>Menu del día</h2>
+									<p>
+										Carne al Vino 
+										Churrasco de pollo
+										Milanesa de pollo
+										Chuleta de cerdo
+									</p>
+								</section>
+
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-			<!-- Features -->
-				<section id="features">
-					<div class="container">
-						<div class="row">
-							<div class="col-3 col-6-medium col-12-small">
+<article>
+			<!-- tarjetas -pages -->
+			<slot />
 
-								<!-- Feature #1 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="https://i.ytimg.com/vi/R1BRbyOqycQ/maxresdefault.jpg" alt="" /></a>
+</article>
+
+
+		<!-- Content -->
+			<section id="content">
+				<div class="container">
+					<div class="row aln-center">
+						<div class="col-4 col-12-medium">
+
+							<!-- Box #1 -->
+								<section>
+									<header>
 										<h2>Visitanos y disfruta de nuestros mejores platos</h2>
-										<p>
-											La <strong>Tia Romy</strong>, es un restaurante
-											con lo mejor de la comida tradicional e internacional, fusionando lo mejor de la cocina, en platos unicos, realizados con ingredientes producidos en la región.
-										</p>
-									</section>
+										<h3>¿Que hacemos?</h3>
+									</header>
+									<a href="#" class="feature-image"><img src="../public/bebidas.jpg" alt="" /></a>
+									<p>
+										La <strong>Tia Romy</strong>, es un restaurante
+										con lo mejor de la comida tradicional e internacional, fusionando lo mejor de la cocina, en platos unicos, realizados con ingredientes producidos en la región.
 
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
+									</p>
+								</section>
 
-								<!-- Feature #2 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="../public/bebidas.jpg" alt="" /></a>
-										<h2>Mezclando tradición e innovación</h2>
-										<p>
-											Traemos para nuestros clientes, combos de pollo asado a las brasas, con papas fritas (para 2 personas) y bebida de 1.5 litros. (Llamanos para reservar)
-										</p>
-									</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
 
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
+							<!-- Box #2 -->
+								<section>
+									<header>
+										<h2>What We Do</h2>
+										<h3>A subheading about what we do</h3>
+									</header>
+									<ul class="check-list">
+										<li>Sed mattis quis rutrum accum</li>
+										<li>Eu varius nibh suspendisse lorem</li>
+										<li>Magna eget odio amet mollis justo</li>
+										<li>Facilisis quis sagittis mauris</li>
+										<li>Amet tellus gravida lorem ipsum</li>
+									</ul>
+								</section>
 
-								<!-- Feature #3 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="../public/ensaladaEspecial.jpg" alt="" /></a>
-										<h2>Ensaladas especiales</h2>
-										<p>
-											Contamos con variedad de ensaladas, realizadas con productos naturales producidos en la localidad, y comprados a productores directos. Realizamos las ensaladas al gusto y requerimiento de nuestros clientes.
-										</p>
-									</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
 
-							</div>
-							<div class="col-3 col-6-medium col-12-small">
+							<!-- Box #3 -->
+								<section>
+									<header>
+										<h2>Comentarios</h2>
+										<h3>Opiniones y platos</h3>
+									</header>
+									<ul class="quote-list">
+										<li>
+											<img src="../public/ensaladaEspecial.jpg" alt="" />
+											<p>"Rica y fresca ensalda, realmente deliciosa"</p>
+											<span>Ensalada especial</span>
+										</li>
+										<li>
+											<img src="../public/carbonara.jpg" alt="" />
+											<p>"Un plato excelente, realmente delicioso"</p>
+											<span>Tallarines a la carbonara</span>
+										</li>
+										<li>
+											<img src="../public/jugosimple.jpg" alt="" />
+											<p>"Un jugo refrescante, realizado con frutas naturales"</p>
+											<span>Jugos de frutas naturales</span>
+										</li>
+									</ul>
+								</section>
 
-								<!-- Feature #4 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="../public/carbonara.jpg" alt="" /></a>
-										<h2>Menu del día</h2>
-										<p>
-											Carne al Vino 
-											Churrasco de pollo
-											Milanesa de pollo
-											Chuleta de cerdo
-										</p>
-									</section>
-
-							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-			<!-- Content -->
-				<section id="content">
-					<div class="container">
-						<div class="row aln-center">
-							<div class="col-4 col-12-medium">
+		<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-8 col-12-medium">
 
-								<!-- Box #1 -->
-									<section>
-										<header>
-											<h2>Who We Are</h2>
-											<h3>A subheading about who we are</h3>
-										</header>
-										<a href="#" class="feature-image"><img src="../public/bebidas.jpg" alt="" /></a>
-										<p>
-											Duis neque nisi, dapibus sed mattis quis, rutrum accumsan magna sed.
-											Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis
-											justo facilisis quis. Sed sagittis amet lorem ipsum.
-										</p>
-									</section>
-
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-
-								<!-- Box #2 -->
-									<section>
-										<header>
-											<h2>What We Do</h2>
-											<h3>A subheading about what we do</h3>
-										</header>
-										<ul class="check-list">
-											<li>Sed mattis quis rutrum accum</li>
-											<li>Eu varius nibh suspendisse lorem</li>
-											<li>Magna eget odio amet mollis justo</li>
-											<li>Facilisis quis sagittis mauris</li>
-											<li>Amet tellus gravida lorem ipsum</li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-
-								<!-- Box #3 -->
-									<section>
-										<header>
-											<h2>Comentarios</h2>
-											<h3>Opiniones y platos</h3>
-										</header>
-										<ul class="quote-list">
-											<li>
-												<img src="../public/ensaladaEspecial.jpg" alt="" />
-												<p>"Rica y fresca ensalda, realmente deliciosa"</p>
-												<span>Ensalada especial</span>
-											</li>
-											<li>
-												<img src="../public/carbonara.jpg" alt="" />
-												<p>"Un plato excelente, realmente delicioso"</p>
-												<span>Tallarines a la carbonara</span>
-											</li>
-											<li>
-												<img src="../public/jugosimple.jpg" alt="" />
-												<p>"Un jugo refrescante, realizado con frutas naturales"</p>
-												<span>Jugos de frutas naturales</span>
-											</li>
-										</ul>
-									</section>
-
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
-
-								<!-- Links -->
-									<section>
-										<h2>Links to Important Stuff</h2>
-										<div>
-											<div class="row">
-												<div class="col-3 col-12-small">
-													<ul class="link-list last-child">
-														<li><a href="#">Neque amet dapibus</a></li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
-													</ul>
-												</div>
-												<div class="col-3 col-12-small">
-													<ul class="link-list last-child">
-														<li><a href="#">Neque amet dapibus</a></li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
-													</ul>
-												</div>
-												<div class="col-3 col-12-small">
-													<ul class="link-list last-child">
-														<li><a href="#">Neque amet dapibus</a></li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
-													</ul>
-												</div>
-												<div class="col-3 col-12-small">
-													<ul class="link-list last-child">
-														<li><a href="#">Neque amet dapibus</a></li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
-													</ul>
-												</div>
+							<!-- Links -->
+								<section>
+									<h2>Links to Important Stuff</h2>
+									<div>
+										<div class="row">
+											<div class="col-3 col-12-small">
+												<ul class="link-list last-child">
+													<li><a href="#bienvenidos">Bienvenidos</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-12-small">
+												<ul class="link-list last-child">
+													<li><a href="twocolumn1.html">Menu</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-12-small">
+												<ul class="link-list last-child">
+													<li><a href="twocolumn2.html">Especiales</a></li>
+												</ul>
 											</div>
 										</div>
-									</section>
+									</div>
+								</section>
 
-							</div>
-							<div class="col-4 col-12-medium imp-medium">
+						</div>
+						<div class="col-4 col-12-medium imp-medium">
 
-								<!-- Blurb -->
-									<section id="direccion">
-										<h2>Cómo llegar</h2>
-										<p>
-											Visitanos, estamos: 
-											Pasaje Corazon de Jesús 4015, La Serena. Coquimbo
+							<!-- Blurb -->
+								<section id="direccion">
+									<h2>Cómo llegar</h2>
+									<p>
+										Visitanos, estamos: 
+										Pasaje Corazon de Jesús 4015, La Serena. Coquimbo
 
-											Llamanos, pedidos, reservaciones y/o coordina envios 
-											+56931751969
-										</p>
-									</section>
+										Llamanos, pedidos, reservaciones y/o coordina envios 
+										+56931751969
+									</p>
+								</section>
 
-							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-			<!-- tarjetas -pages -->
-				<slot />
+
+
 
 			<!-- Copyright -->
 				<div id="copyright">
-					&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+					&copy; La Tía Romy. Todos los derechos reservados. | La Tía Romy@2023</a>
 				</div>
 
 		</div>
