@@ -1,14 +1,304 @@
----
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
----
+
+<head>
+    <title>3D Slider</title>
+</head>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+    background: #eee;
+    user-select: none;
+}
+
+[type radio] {
+    display: none;
+}
+
+#slider {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radios:4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+
+    #s1:checked ~ #slide4, #s2:checked ~ #slide5, 
+    #s3:checked ~ #slide1, #s4:checked ~ #slide2, 
+    #s5:checked ~ #slide3{
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.37)
+        transform: translate3d(-30%,0, -200px);
+    }
+    
+    #s1:checked ~ #slide5, #s2:checked ~ #slide1, 
+    #s3:checked ~ #slide2, #s4:checked ~ #slide3, 
+    #s5:checked ~ #slide4{
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba (0,0,0,.2);
+        transform: translate3d(-15%,0, -100px);
+    }
+
+    #s1:checked ~ #slide1, #s2:checked ~ #slide2, 
+    #s3:checked ~ #slide3, #s4:checked ~ #slide4, 
+    #s5:checked ~ #slide5{
+        box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba (0,0,0,.19);
+        transform: translate3d(0,0,0);
+    }
+
+    #s1:checked ~ #slide5, #s2:checked ~ #slide1, 
+    #s3:checked ~ #slide2, #s4:checked ~ #slide3, 
+    #s5:checked ~ #slide4{
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba (0,0,0,.2);
+        transform: translate3d(-15%,0, -100px);
+    }
+    #s1:checked ~ #slide2, #s2:checked ~ #slide3, 
+    #s3:checked ~ #slide3, #s4:checked ~ #slide5, 
+    #s5:checked ~ #slide1{
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba (0,0,0,.2);
+        transform: translate3d(-15%,0, -100px);
+    }
+    #s1:checked ~ #slide3, #s2:checked ~ #slide4, 
+    #s3:checked ~ #slide5, #s4:checked ~ #slide1, 
+    #s5:checked ~ #slide2{
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+        transform: translate3d(30%,0,-200px);
+    }
+}
+
+
+/* Pass Code: TP-4087A8 ######### https://youtu.be/biCULOcPLRw */
+/*
+In this tutorial how to make beautiful Responsive 3D Carousel Slideer in Html and css .  We are creating CSS 3D Slider on click Change Slider with CSS3. How to Create 3D Carousel Slider | How to make Rotation 3D Slider in CSS 3 . In this video we will learn something interesting which will cover CSS3 3d Image Slider with Css.3D images slideshow using html and css. In this website design and educational tutorial i will be showing you that - CSS 3 Carousel & Slider Design || Modern Slider using css 3 . Thank you for watching video. If you like video please like, share, comment and subscribe the channel for more videos.
+Bootstrap Tutorials
+Html Tutorials
+CSS Tutorials
 
 
 
-<Layout title="La Tía Romy - Restaurante">
+#3DSlider
+#3DCarouselSlider
+#3DImageSlider
+#Responsive3dSlider
+#3DCarouselImageSlider
+#CreativeImageSlider
+#3dImageSliders
+#TheProviders
+#TheProvider
 
-<!--carousel CSS --> >
-	<style>
+
+
+The Providers
+Hello, Guyz we are providing creative and next-generation websites and elements of websites having attractive and responsive UI / UX for free download source files visit our website.
+
+ ------------------------------------------- Free Source Code -------------------------------------------
+
+You can only use the Passcode mentioned in the video's Subtitles. Get its Source files by simply Our website with help of PassCode:
+
+Websites Url:  https://theproviderssolutions.com/por...
+
+If you some problems to download Please Check Our Video: How to Download Our Source Files (link: https://youtu.be/U58kFMcN8Ug )
+and else any problem so, Contact us in WhatsApp:
+
+Muhammad Farhan: 03162859445
+
+
+Our Responsive Slider Owl Slider Playlist is : https://www.youtube.com/watch?v=biCUL...
+
+
+DEVELOPERS: Mohammad Farhan, Abdul Rafay, Nickson Parvaiz 
+
+EDITING:  Nickson Parvaiz
+
+*/
+
+</style>
+
+<body>
+<br>
+<h1 style="text-align: center;font-family: monospace;font-size: 42px;"> 3D Carousel Slider</h1>
+<br><br>
+
+<section id="slider">
+    <input type="radio" name="slider" id="s1">
+        <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3" checked>
+                <input type="radio" name="slider" id="s4">
+                    <input type="radio" name="slider" id="s5">
+<label for="s1" id="slide1">
+    <img src="img1.jpg" height="100%" width="100%">
+</label>   
+<label for="s2" id="slide2">
+    <img src="img2.jpg" height="100%" width="100%">
+</label>
+<label for="s3" id="slide3">
+    <img src="img3.jpg" height="100%" width="100%">
+</label>
+<label for="s4" id="slide4">
+    <img src="img4.jpg" height="100%" width="100%">
+</label>
+<label for="s5" id="slide5">
+    <img src="img5.jpg" height="100%" width="100%">
+</label>
+
+
+
+##### ====> index.js
+import './style.css'
+
+const slide = document.querySelector('.slide');
+const root = document.querySelector(':root');
+let slideIndex = 1;
+let isMoving = false;
+
+function processImages(item){
+  return `<img src="${item.url}" alt="${item.alt}">`;
+}
+
+function moveSlides(){
+  slide.style.transform = `translateX(-${slideIndex * 100}%)`;
+  const slidesArray = [...slide.querySelectorAll('img')];
+  root.style.setProperty('--slide-progress', `${(100 / (slidesArray.length -3)) * (slideIndex -1)}%`);
+}
+
+// move when clicked
+
+function moveHandler(direction){
+  isMoving = true;
+  slide.style.transition = `transform 450ms ease-in-out`;
+  direction !== 'right' ? (slideIndex -= 1) : (slideIndex += 1);
+  moveSlides();
+}
+
+// fetch images
+async function fetchImages(){
+  await fetch('images.json')
+    .then((response) => {
+      if(!response.ok){
+        throw new Error('Network response was not okay');
+      }
+      return response.json();
+    })
+    .then((data) => {
+      // cloned first and last image
+      data.push(data[0]);
+      data.unshift(data[data.length - 2]);
+      // show slider
+      slide.innerHTML = data.map(processImages).join('');
+      moveSlides();
+    })
+    .catch((error) => {
+      console.error('There has been a problem with your fetch operation:', error);
+    });
+}
+fetchImages()
+
+// keyboard arrow handler
+window.addEventListener('keyup', e => {
+  if(isMoving){
+    return;
+  }
+  switch (e.key){
+    case 'ArrowLeft':
+      moveHandler()
+      break;
+    case 'ArrowRight':
+      moveHandler('right')
+      break;
+    default:
+      break;
+  }
+})
+
+// click right btn
+document.querySelector('.slider__btn--right').addEventListener('click', () => {
+  if(isMoving){
+    return;
+  }
+  moveHandler('right');
+})
+
+// click left btn
+document.querySelector('.slider__btn--left').addEventListener('click', () => {
+  if(isMoving){
+    return;
+  }
+  moveHandler();
+})
+
+slide.addEventListener('transitionend', () => {
+  isMoving = false;
+  const slidesArray = [...slide.querySelectorAll('img')];
+  root.style.setProperty('--slide-progress--transition', `${slideIndex === slidesArray.length - 1 ? 'none' : 'all 400ms cubic-bezier(0.82, 0.02, 0.39, 1.01)'}`);
+  if(slideIndex === 0){
+    slide.style.transition = 'none';
+    slideIndex = slidesArray.length - 2;
+    moveSlides()
+  }
+  if(slideIndex === slidesArray.length -1){
+    slide.style.transition = 'none';
+    slideIndex = 1;
+    moveSlides()
+  }
+})
+
+#####====>index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>Image Slider</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Explore.</h1>
+        <div class="slider">
+          <div class="slider__progress"></div>
+          <div class="slider__btn-container">
+            <button class="slider__btn slider__btn--left" aria-label="Move to previous slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </button>
+            <button class="slider__btn slider__btn--right" aria-label="Move to next slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+          <div class="slide">
+            <img src="./images/image-1.jpg" alt="alt">
+            <img src="./images/image-1.jpg" alt="alt">
+            <img src="./images/image-1.jpg" alt="alt">
+            <img src="./images/image-1.jpg" alt="alt">
+            <img src="./images/image-1.jpg" alt="alt">
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+##########==============>style.css
+
 *, *::after, *::before {
   border: 0;
   margin: 0;
@@ -135,106 +425,4 @@ h1 {
     right: -3px;
   }
 }
-	</style>
 
-
-<!--carousel --> >
-    <main>
-      <div class="container">
-        <h1>Explore.</h1>
-        <div class="slider">
-          <div class="slider__progress"></div>
-          <div class="slider__btn-container">
-            <button class="slider__btn slider__btn--left" aria-label="Move to previous slide">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-            </button>
-            <button class="slider__btn slider__btn--right" aria-label="Move to next slide">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-          </div>
-          <div class="slide">
-            <img src="../public/broaster.jpg" alt="alt">
-            <img src="../public/broaster2.jpg" alt="alt">
-            <img src="../public/broaster3.jpg" alt="alt">
-            <img src="../public/churrascos.jpg" alt="alt">
-            <img src="../public/enrrollado.jpg" alt="alt">
-          </div>
-        </div>
-      </div>
-    </main>
-
-
-	<main>
-		<h1>Bienvenidos a <span class="text-gradient">La Tía Romy - Restaurante</span></h1>
-		<p class="instructions">
-			Te invitamos a disfruta lo mejor de la gastronomia tradicional e internacional, con los mejores ingredientes frescos y producidos en la localidad.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
